@@ -4,7 +4,7 @@
 
 **The right yoga video, at the right moment — every time.**
 
-*A personal AI-powered yoga companion that deeply understands every video in your favorite instructor's library, then matches the right one to how you feel right now.*
+*A personal tool, built by me for me. If it's useful to you too, great — but this one's mine.*
 
 [![PHP](https://img.shields.io/badge/PHP-8.2-8892BF?logo=php&logoColor=white)](https://php.net)
 [![Laravel](https://img.shields.io/badge/Laravel-11-FF2D20?logo=laravel&logoColor=white)](https://laravel.com)
@@ -18,9 +18,11 @@
 
 ## The Problem
 
-You've found a yoga instructor you love. Their library has hundreds of videos. But every time you want to practice, you spend 10 minutes scrolling — trying to remember which video was the gentle one, which one wrecked your lower back, which one had that flow you loved after a stressful day.
+I do yoga regularly, and I have a favorite instructor — [Lea Hutzler](https://www.youtube.com/@leayoga) — whose library I love. But with hundreds of videos, choosing the right one for a given day is hard. Some days call for something gentle. Other days I want a challenge. And with lower back pain in the mix, picking wrong isn't just frustrating — it can actually hurt.
 
-**YogaPro solves this.** It watches every video so you don't have to remember them.
+I was spending 10 minutes scrolling every time I wanted to practice. Trying to remember which video was the gentle one, which one wrecked my back, which one had that flow I loved after a stressful day.
+
+**YogaPro solves this.** It watches every video so I don't have to remember them.
 
 ---
 
@@ -278,12 +280,20 @@ See [`GAMEPLAN.md`](GAMEPLAN.md) for the full schema with column-level documenta
 
 ## Why I Built This
 
-I do yoga regularly. I have a favorite instructor with a huge video library. Choosing the right video for any given day was genuinely hard — especially managing lower back pain, where the wrong session can do more harm than good.
+Yoga matters to me — physically and mentally. A good session, the right video at the right time, makes me feel genuinely great. But I was spending 10 minutes scrolling before every practice, unsure what to pick, and occasionally choosing wrong and paying for it with back pain.
 
-I wanted a tool that actually *knew* what was in each video, understood my body's needs, and could make a smart recommendation in seconds. So I built one.
+I wanted a tool that actually *knew* what was in each video and could match it to how I feel right now. So I built one.
+
+---
+
+## Credit Where It's Due
+
+**[Lea Hutzler](https://www.youtube.com/@leayoga)** — the instructor whose videos this entire system is built around. Her teaching is thoughtful, accessible, and genuinely good for your body. If you practice yoga, go check her out.
+
+Built by me, with **[Claude](https://claude.ai)** as my coding partner — pair programming, architecture decisions, the whole thing.
 
 ---
 
 <div align="center">
-<sub>Built with Laravel · Powered by Gemini AI · For the mat</sub>
+<sub>Built for the mat · Powered by Gemini AI & Laravel · Inspired by <a href="https://www.youtube.com/@leayoga">Lea Hutzler</a></sub>
 </div>
