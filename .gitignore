@@ -1,3 +1,4 @@
+/private/
 *.log
 .DS_Store
 .env
