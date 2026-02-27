@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Lora:ital,wght@0,400;0,600;1,400&family=Noto+Color+Emoji&display=swap');
+@import 'tailwindcss';
+
+@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
+@source '../../storage/framework/views/*.php';
+@source '../**/*.blade.php';
+@source '../**/*.js';
+
+@theme {
+    /* Typography */
+    --font-sans: 'Inter', 'Noto Color Emoji', ui-sans-serif, system-ui, sans-serif;
+    --font-serif: 'Lora', ui-serif, Georgia, serif;
+
+    /* Colors — warm yoga palette */
+    --color-ivory:      #FAF7F2;
+    --color-sage:       #8FAF8F;
+    --color-sage-light: #C5D5C5;
+    --color-sage-dark:  #6A8F6A;
+    --color-terra:      #D4846A;
+    --color-terra-dark: #B8664E;
+    --color-charcoal:   #3D3D3A;
+    --color-charcoal-light: #6B6B67;
+    --color-mist:       #F0EDE8;
+    --color-white:      #FFFFFF;
+
+    /* Border radius — generous and soft */
+    --radius-sm:  0.75rem;   /* 12px */
+    --radius-md:  1rem;      /* 16px */
+    --radius-lg:  1.25rem;   /* 20px */
+    --radius-xl:  1.5rem;    /* 24px */
+    --radius-2xl: 2rem;      /* 32px */
+
+    /* Shadows — warm, soft */
+    --shadow-warm-sm: 0 1px 3px 0 rgba(61, 61, 58, 0.08), 0 1px 2px -1px rgba(61, 61, 58, 0.06);
+    --shadow-warm-md: 0 4px 12px 0 rgba(61, 61, 58, 0.10), 0 2px 4px -1px rgba(61, 61, 58, 0.06);
+    --shadow-warm-lg: 0 8px 24px 0 rgba(61, 61, 58, 0.12), 0 4px 8px -2px rgba(61, 61, 58, 0.08);
+}
+
+/* Base styles */
+html, body {
+    background-color: var(--color-ivory);
+    color: var(--color-charcoal);
+    font-family: var(--font-sans);
+    -webkit-tap-highlight-color: transparent;
+}
+
+/* Ensure all tap targets are large enough and feel interactive */
+button, a, [role="button"] {
+    min-height: 44px;
+    min-width: 44px;
+    cursor: pointer;
+}
+
+/* Children inside interactive elements must inherit the pointer cursor */
+button *, a *, [role="button"] * {
+    cursor: inherit;
+}
+
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
